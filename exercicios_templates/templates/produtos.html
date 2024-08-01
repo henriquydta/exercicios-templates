@@ -1,0 +1,22 @@
+{% extends "base2.html" %}
+
+{% block title %} Produtos {% endblock %}
+
+{% block content %}
+<h1> Produtos </h1>
+<section class="product">
+    <img src="{{ url_for('static', filename='img/image.png') }}">
+    <h4> Baralho COPAG </h4>
+    <p> Baralho clássico para jogatinas </p>
+</section>
+<section class="product">
+    <img src="{{ url_for('static', filename='img/image2.png') }}">
+    <h4> Fichas Bicycle </h4>
+    <p> Fichas para partidas de poker </p>
+</section>
+<section class="product">
+    <img src="{{ url_for('static', filename='img/image3.png') }}">
+    <h4> Dados de RPG </h4>
+    <p> Dados para jogos de RPG </p>
+</section>
+{% endblock %}

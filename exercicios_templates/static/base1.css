@@ -1,0 +1,18 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0;
+}
+
+body {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}

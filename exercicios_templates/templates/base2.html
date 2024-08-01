@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Base 2 {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base2.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}"> Home </a></li>
+                <li><a href="{{ url_for('contato') }}"> Contato </a></li>
+                <li><a href="{{ url_for('produtos') }}"> Produtos </a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %} 
+    {% endblock %}
+    <hr />
+    <footer>
+        <p> Desenvolvido por Henry. </p>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('termos') }}"> Termos de Uso </a></li>
+                <li><a href="{{ url_for('privacidade') }}"> Política de Privacidade </a></li>
+                <li><a href="{{ url_for('utilizar')}}"> Como Utilizar </a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
